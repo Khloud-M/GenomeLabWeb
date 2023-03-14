@@ -1,0 +1,281 @@
+*{
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing: border-box ;
+    box-sizing:border-box;
+}
+:root
+{
+    --main-color:#2196f3;
+    --main-color-alt:#1787e0;
+    --main-transtion: 1.5s;
+    --main-padding-top: 100px;
+    --main-padding-bottom: 100px;
+    --backgroud:#ececec;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+body
+{
+    font-family: 'Cairo', sans-serif;
+    
+}
+.Sign .container {
+    width: 85%;
+    margin: auto auto;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px;
+    padding-bottom: 10%;
+    background-color: aqua;
+}
+
+.Sign {
+   background-color: black;
+}
+
+.Sign h2 {
+    text-align: left;
+    padding: 3%;
+    margin-top: 10%;
+    padding-left: 0;
+    width: 85%;
+    margin-left: 7%;
+    border-bottom: 1px solid #dc864e;
+    color: #dc864e
+}
+
+.Sign .signLinks {
+    width: 100%;
+    margin-left: 0;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-bottom: 0;
+    padding-left: 0;
+    background-color: #faf5f1;
+    border-radius: 15px 15px 0 0
+}
+
+.Sign .signLinks a,
+.Sign .signLinks li {
+    color: #dc864e;
+    font-size: 21px;
+    width: 50%;
+    border-radius: 0 ​15px 0 0;
+    font-weight: 800;
+    padding: 2%;
+    transition: background-color .5s ease-in-out;
+    list-style-type: none;
+    cursor: pointer;
+    background-color: #dc864e;
+    color: #faf5f1
+}
+
+.Sign .signLinks li:first-of-type,
+.Sign .signLinks li:first-of-type a {
+    border-radius: 15px 0 0 0
+}
+
+.Sign .signLinks li:last-of-type,
+.Sign .signLinks li:last-of-type a {
+    border-radius: 0 15px 0 0
+}
+
+.Sign .signLinks a {
+    border-radius: 0
+}
+
+.Sign .signLinks li,
+.Sign .signLinks li a {
+    background-color: #dc864e;
+    color: #faf5f1;
+    padding: 0%;
+}
+
+.Sign .signLinks li.active a {
+    color: #dc864e;
+    background: #faf5f1
+}
+
+.Sign .signLinks li.active {
+    transition: all 1px ease-in-out
+}
+
+.Sign .signLinks li a {
+    width: 100%;
+    display: inline-block;
+    padding: 6%;
+    border-radius: 0px 15px 0px 0px;
+}
+
+.signIn,
+.signUp {
+    width: 50%;
+    height: auto;
+    background-color: #faf5f1;
+    border: 1px solid #707070;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap
+}
+
+.Sign form {
+    flex-wrap: wrap;
+    width: 90%;
+    margin-left: 7%
+}
+
+.Sign form .continput {
+    width: 100%;
+    margin: 10px 0px;
+    height: 40px;
+    overflow: hidden
+}
+
+.Sign form .continput button.icon {
+    width: 10%;
+    padding: 0;
+    margin: 0;
+    height: 100%
+}
+
+.Sign form .continput input {
+    width: 100%;
+    border-radius: 0 5px 5px 0;
+    border: 1px solid #d1d1d1;
+    margin-left: 0;
+    outline: 0;
+    border: 1px solid #dc864e;
+    display: inline-block;
+    color: #dc864e;
+    border-left: 0;
+    padding-left: 5px;
+    width: 89%;
+}
+
+.Sign input::placeholder {
+    padding-left: 0
+}
+
+.Sign label {
+    margin: 3% 0;
+    color: #2f2e2e;
+    width: 100%;
+    font-size: 15px;
+    display: flex;
+    font-weight: 500;
+}
+
+.Sign label span {
+    color: #dc864e;
+    margin-left: 5px
+}
+
+.Sign .submit {
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between
+}
+
+.Sign button[type=submit] {
+    background-color: #dc864e;
+    color: #faf5f1;
+    font-size: 20px;
+    padding: 2%;
+    margin: 30px 0;
+    border-radius: 5px;
+    outline: 0;
+    border: none;
+    justify-content: space-evenly;
+    width: 100%;
+    cursor: pointer;
+    border: 1px solid #fafafa;
+    transition: all 1s ease-in-out;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.Sign button[type=submit]:hover {
+    background: #592a20;
+    color: #fafafa;
+    border: 1px solid #dc864e
+}
+
+input {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.Sign .submit label {
+    width: 26%;
+    margin: 0;
+    margin-top: 2%;
+    cursor: pointer;
+    padding-left: 0;
+    font-size: 17px
+}
+
+.Sign .submit a {
+    color: #dc864e;
+    margin-top: 2%;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500
+}
+
+.Sign button.icon {
+    background: #dc864e;
+    width: 6%;
+    height: auto;
+    outline: 0;
+    border: none;
+    text-align: center;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid #dc864e;
+    border-right: 0
+}
+
+.Sign button.icon i {
+    color: #faf5f1
+}
+
+.Sign .hiden {
+    display: none
+}
+
+.Sign input[type=checkbox] {
+    -webkit-appearance: initial;
+    appearance: initial;
+    margin: 0;
+    margin-left: 5px;
+    border: 1px solid #d5d3d3;
+    background: #e2dfdf;
+    width: 10px;
+    height: 5px;
+    background: #f8f6f6;
+    position: relative;
+    padding: 6.5px;
+    border-radius: 3px
+}
+
+input[type=checkbox]:checked {
+    background: #dc864e
+}
+
+input[type=checkbox]:checked:after {
+    content: "\2713";
+    color: #fff;
+    position: absolute;
+    font-size: 12px;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%)
+}
+
